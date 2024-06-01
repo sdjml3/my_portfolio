@@ -1,0 +1,244 @@
+<!Doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+  html{
+    scroll-behavior:smooth;
+  }
+*{
+  font-family:sans-serif;
+  margin:0px;
+  padding:0px;
+}
+body{
+  background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)),url("https://images.pexels.com/photos/574115/pexels-photo-574115.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  background-size:cover;
+  overflow:scroll;
+}
+li{
+  list-style-type:none; 
+  color:white;
+  margin-bottom:20%;
+  border-radius:20px;
+  opacity:0.9;
+}
+figcaption{
+  background-color:#1E90FF;
+  border-radius:20px;
+  margin:5px;
+  padding:10px;
+  font-weight:bold;
+}
+img{
+  height:500px;
+  border:0px;
+  border-radius:20px;
+  width:300px;
+}
+h2{
+  color:white;
+  padding:10px;
+  margin-bottom:5px;
+  background-color: #1E90FF;
+}
+#heading.h2.pp{
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  
+}
+div#heading{
+  position: sticky;
+  top:0px;
+  z-index:1;
+  background-color:black;
+  
+}
+.content{
+  display:flex;
+  justify-content:center;
+  align-items:start;
+  padding:0px;
+  margin:0px;
+}
+.pp{
+  background-color:black;
+  border-radius:10px;
+  padding:10px;
+  
+}
+#arrow{
+  padding:0px 4px 0px 4px;
+  padding-right:4px;
+  width:25px;
+  height:10px; 
+}
+  
+#certificates{
+  background-color:#243447;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color: white;
+  text-decoration:none;
+  border:1px solid white;
+  border-radius:20px;
+  width:300px;
+  padding:5px;
+  margin-top:-5px;
+  cursor:pointer;
+} 
+.certificate-box{
+  width:100%;
+  background-color:black;
+}
+#display>a{
+  text-align:center;
+  width:100%;
+  color:white;
+  text-decoration:none;
+  cursor:pointer;
+  font-style:italic;
+  font-family:serif;
+  transition:font-size 0.3s ease;
+  }
+#display>a:hover{
+  color: #00CCFF;
+  text-decoration: none;
+  text-decoration-color: #1E90FF;
+  padding:1px;
+  font-size: 18px;
+}
+#display{
+  display:flex;
+  justify-content:flex-start;
+  align-items:flex-start;
+  display:none;
+  padding:5px;
+  margin-top:10px;
+  width:350px;
+  background-color: black;
+  z-index:2;
+}
+  .footer{
+    background-color:#1E90FF;
+    color:white;
+    padding:10px;
+    height:150px;
+  }
+  .footer>a{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:white;
+    text-decoration:none;
+    padding-bottom:10px;
+    height:30px;
+    font-weight:400px;
+  }
+  #wa{
+    width:25px;
+    height:25px;
+    padding-left:3px;
+  }
+  @media only screen and (min-width:768px){
+     img{
+      height:600px;
+       width:400px;
+    }
+    figcaption{
+      font-size:20px;
+      padding:10px;
+      border-radius:40px;
+    }
+    #heading>h2{
+      font-size:40px;
+      padding:10px;
+    }
+    #certificates{
+      font-size:20px;
+      padding:5px;
+      border-radius:50px; 
+    }
+    #display>a,#display{
+      font-size:22px;
+      width:600px; 
+      padding:4px;
+      overflow: hidden;
+    }
+    #display>a:hover{
+      font-size:27px;
+      width:100%; 
+    }
+    .pp{
+      font-size:15px;
+    }
+    .footer{
+      font-size:20px;
+      height:100%;
+    }
+    #wa{
+      height:40px;
+        width:40px;
+    }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+ <div align=center id="heading">
+   <h2 id="project" >PROJECTS</h2></div>
+  <div align=center class="certificate-box">
+   <a  id="certificates" onclick="ShowCertificates()">CERTIFICATES <img id="arrow" src="down-arrow.png" alt="White Down Arrow Png" /></a>
+   <div align=start id="display">
+  <a href="https://www.udemy.com/certificate/UC-703b0a2f-927b-4108-91d2-3b568c877af9/" > >  CSS and JavaScript Crash Course </a><br><br>
+  <a  href="https://www.udemy.com/certificate/UC-f216c1c2-3752-4174-a5f9-373274ee7963/"> >  CSS, Bootstrap, JavaScript, Web Development Course </a><br><br>
+  <a href="https://www.udemy.com/certificate/UC-6dd8d724-6166-4896-a5fa-61d1cb388541/"> >  Learn MySQL - For Beginners</a><br><br>
+  <a href="https://www.udemy.com/certificate/UC-1f6dd691-75d4-4f0c-966c-43c8f4b64779/"> >  Learn PHP - For Beginners</a><br><br>
+  <a href="https://www.udemy.com/certificate/UC-69b4d29e-50f8-4eec-9fe0-b6fcddb08715"> >  Python for beginners- Learn all the basics of python</a><br><br>
+  <a href="https://verify.letsupgrade.in/certificate/LUEHTMLDEC122140"> >  HTML & CSS Essentials bootcamp</a><br><br>
+  <a href="https://verify.letsupgrade.in/certificate/LUEJSJAN123137"> >  JavaScript Programming Essentials Bootcamp</a><br><br>
+  <a href="https://www.udemy.com/certificate/UC-4f4aab22-4e73-4713-b214-6ad5fa502fd7"> >  Learn C++ Programming -  Beginner to Advance -  Deep Dive in C++</a><br><br>
+  <a href="https://verify.letsupgrade.in/certificate/LUESQLJAN123493"> >  SQL Essentials bootcamp</a><br><br>
+  <a href="https://ict-certificates.s3.ap-south-1.amazonaws.com/193775-159067-303ba4da9df04ca5-2021.pdf"> >  Full Stack Developer</a>
+  <br><br><hr>
+   </div>
+  <p class="pp" style="color:white;"><i> Kindly click on the image in order to go on respective page. </i></p> </div>
+
+<div  class="content">
+<ul>
+<li><figure><figcaption>Tic-Tac-Toe Game</figcaption><a href="https://strong-gecko-717585.netlify.app/"><img src="game.jpg"></a></figure></li>
+<li><figure><figcaption>Calculator</figcaption><a href="https://665b797c77ed459ecb28f056--shimmering-genie-68668e.netlify.app/"><img src="calculator.jpg"></a></figure></li>
+<li><figure><figcaption>Qr_Code-Generator</figcaption><a href="https://timely-eclair-c521fa.netlify.app/"><img src="Qr.jpg"></a></figure></li>
+</ul>
+</div>
+  <div align=center class="footer">
+    <h3>Thank you for visiting💐</h3><br>
+    <h4>Regards: Mohd Saad</h4><br>
+    <a href="https://wa.me/9871865727">Contact me!<img id="wa"  src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6b/WhatsApp.svg/1024px-WhatsApp.svg.png" /></a>
+  </div>
+  </div>
+  <script>
+    var i=0;
+     function ShowCertificates(){
+       let dis=document.getElementById("display");
+var image=document.getElementById("arrow");
+  if(i%2==0){   image.style.transform="rotate(180deg)";
+  dis.style.display="block";
+    i++;
+    }
+  else
+    if(i%2==1){  image.style.transform="rotate(0deg)";
+   dis.style.display="none";
+      i++;
+    }
+  
+     }
+  </script>
+  
+</body>
+
+</html>
