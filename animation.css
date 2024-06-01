@@ -1,0 +1,14 @@
+x#display{
+  animation-name:slide;
+  animation-duration:1s;
+  overflow:hidden;
+}
+@keyframes slide{
+  0%{
+    height:0%;
+  }
+    
+  75%{
+    height:57%;
+  }
+}

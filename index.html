@@ -1,183 +1,181 @@
-<!Doctype html>
+ <!Doctype html>
 <html>
+
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  
-  <link rel="icon" href="https://cdn2.iconfinder.com/data/icons/ios7-inspired-mac-icon-set/512/Calculator_512.png">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/172/172163.png?w=1060&t=st=1685529982~exp=1685530582~hmac=6a1d2a2a0fcbd146e9c5f5bbe20d8cea55c4ed6f61975e2d086e06de8586cb6c">
+<title>
+Mohd Saad
+</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
 <style>
-  
-body{
-  background:linear-gradient(rgba(255,255,255,0.6),rgba(255,255,255,0.6)),url(https://images.unsplash.com/photo-1554755229-ca4470e07232?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80);
-background-size: cover;
-}
-input{
-  font-size:18px;
-}
-#xx{
-  width:230px;
-  border-radius:100px;
-  height:50px;
-  border:0;
-  margin-top:5px;
-  -webkit-box-shadow:0px 3px 1px 2px grey;
-}
-  .container{
-  margin: auto;
+  *{
+    margin:0;
+    padding:0;
   }
-#in{
-  position:absolute;
-  border:0;
-  border-radius:50px;
-  width:3.2rem;
-  height:3.2rem;
-  background-color: #ff7999;
-  z-index:2;
-  right:23px;
-  top:22px;
-}
-.button>input{
-  width:3.2rem;
-  height:3.2rem;
-  border-radius:200px;
-  border:0px none;
-  -webkit-box-shadow:0px 3px 1px 2px grey;
-}
-.content{
-  background-color:white;
-  position: absolute;
-  top:50%;
-  left:50%;
-  transform: translate(-50%, -50%);
-  opacity:0.8;
-  padding:20px;
-  border-radius:20px;
-  -webkit-box-shadow:0px 0px 10px 10px grey;
-}
-input{
-  padding:10px 0px 10px 0px;
-  margin:2.5px;
-}
-#result{
-  background-color:lightgrey;
-  border:0;
-  border-radius:100px;
-  font-size:15px;
-  margin: 5px;
-  width:230px;
-  height:50px;
-  font-size:20px;
-}
-.name{
-  position: absolute;
+  body{
+  background-color:black;
+  overflow:hidden;
   display:flex;
-  justify-content:end;
+  justify-content:center;
+  align-items:center;
+  box-sizing: border-box;
+  height:100%;
+  width:100%;
+  }
+.container{
+  display:flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items:center;
+  font-family: srif,roboto;
+  color:white;
+}
+.naming{
+  display: grid; 
+  margin:200px 50px 0px 50px;
+}
+#sign{
+  display:flex;
+}
+a>img{
+  width:45px;
+  height:45px;
+  border-radius:50px;
+  cursor:pointer;
+}
+a{
+  padding:1rem;
+}
+.button{
+  display:flex;
+  justify-content:center;
   
 }
-#equal{
-  background-color: orange;
+  #image{
+    display:none;
+    place-items:center;
+    position: absolute;
+    z-index:0;
+    width:100%;
+    overflow:hidden;
+  }
+  #btn{
+    border-radius:200px;
+    width:70px;
+    padding:15px;
+    border:0;
+    font-weight:500;
+  }
+  #image>img{
+    border-radius:20px;
+    display:grid;
+    place-items :center;
+    margin:50% 5% 5% 5%;
+  }
+  .imgbox{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    place-items :center;
+  }
+  @media only screen and (min-width:768px){
+    .naming{
+     font-size:24px;
+     margin:100px 100px 0px 100px;
+    }
+    a>img{
+      width:100px;
+      height:100px;
+      padding:20px;
+      border-radius:100px;
+    }
+    #sign{
+      font-size:15px;
+    }
+    #image>img{
+      margin:20% 0% 0% 0%;
+      width:380px;
+      height:380px;
+      border-radius:50px;
+    }
+    
+  }
+  .content1{
+    background:linear-gradient(rgba(0,0,0,0.55),rgba(0,0,0,0.55)),url("https://images.pexels.com/photos/956981/milky-way-starry-sky-night-sky-star-956981.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+  animation:zoom 30s linear infinite;
+  position:fixed;
+  background-size: cover;
+  z-index:-1;
+  height:110%;
+  width:130%;
+  
 }
-#clean{
-  background-color: lightgreen;
+  
+@keyframes zoom{
+  0%{
+  transform:scale(1) rotate(0deg);
+  }
+  50%{
+  transform:scale(1.4) rotate(14deg);
+  }
+  100%{
+  transform:scale(1) rotate(0deg);
+  }
+  
 }
+  .content{
+  }
 </style>
 </head>
-
 <body>
+  </script>
+  
+ <div class="container">
+<div class="content">
+<div class="content1">
+</div>
+  <div class="naming">
+<span><strong>Name : </strong>Mohd Saad</span>
+<span><strong>Skills : </strong> C/C++, HTML & CSS, JavaScript, Python, Problem solving, English Communication.</span>
+<span><strong>Education : </strong>B.Tech (Computer Science)</span>
+<span><strong>E-mail : </strong>saadjamalsaifi@gmail.com</span>
+  <div align=center class="imgbox">
+  <div id="image">
+    <img  src="https://i.ibb.co/2WDq3h5/300412229-1095339734693121-7378942656376936433-n.jpg" alt="300412229-1095339734693121-7378942656376936433-n"><br>
+<button id="btn" type="button" onclick="hide()">close</button>
+  </div>
+</div>
+  <p>Welcome,<br>I am Mohd Saad, a student of computer science, Currently upgrading skills in web development.<br>I am always anxious to work hard and ready to learn new things in order to  keep myself updated with time and active in respective field of technology.<br>
+  </p>
+  </div>
+
+  
+    <div class="button">
+<a onclick="Projects()"><img src="project.jpg" alt="Projects"></a>
+<a onclick="profile()"><img src="https://cdn.pixabay.com/photo/2017/02/23/13/05/avatar-2092113_1280.png" alt="profile"></a>
+<a onclick="LinkedIn()"><img src=" https://cdn.pixabay.com/photo/2017/08/22/11/56/linked-in-2668696_1280.png " alt="LinkedIn"></a>
+<a onclick="Resume()"><img src="https://cdn.pixabay.com/photo/2021/02/02/12/22/cv-5973796_1280.png" alt="resume"></a></div>
+</div>
+  <h6 id="sign">Created By: Mohd Saad</h6>
+</div>
 <script>
-function display(num){
-document.getElementById("result").value+=num;
-  return num;
-}
-function sol(){
-    let x = document.getElementById('result').value
-    let y = eval(x);
-    document.getElementById('result').value = y
-    return y
-}
-function clr(){
-  document.getElementById("result").value=" ";
-}
-function del(num){
-let numbers = document.getElementById("result").value;
-const newNum = numbers.slice(0, -1)
-document.getElementById("result").value=newNum;
-}
-</script>
-<div class="container">
-    
- <div class="content">
-<input type="text/number" id="result"><input id="in" type="button" value="DEL" onclick="del('num')">
-<br><hr>
-<div class="button">
-<input class="xxx" type="button" value="( "  onclick="display('(')" >
-<input class="xxx" type="button" value=" )"  onclick="display(')')">
-<input class="xxx" type="button" value="%"   onclick="display('%')">
-<input id="clean" type="button" value=" C " onclick="clr()">
-<br>
-<input class="xxx" type="button" value="7"  onclick="display('7')">
-<input class="xxx" type="button" value="8"  onclick="display('8')">
-<input class="xxx" type="button" value="9"   onclick="display('9')">
-<input class="xxx" type="button" value=" ÷ " onclick="display('/')">
-<br>
-<input class="xxx" type="button" value="4" onclick="display('4')">
-<input class="xxx" type="button" value="5" onclick="display('5')">
-<input class="xxx" type="button" value="6" onclick="display('6')">
-<input class="xxx" type="button" value=" × " onclick="display('*')">
-<br>
-<input class="xxx" type="button" value="1" onclick="display('1')" >
-<input class="xxx" type="button" value="2" onclick="display('2')" >
-<input class="xxx" type="button" value="3" onclick="display('3')">
-<input class="xxx" type="button" value=" - "  onclick="display('-')">
-<br>
-<input class="xxx" type="button" value=" ."  onclick="display('.')">
-<input class="xxx" type="button" value="0" onclick="display('0')">
-<input id="equal" type="button" value="=" onclick="sol()">
-<input class="xxx" type="button" value=" + "  onclick="display('+')">
-</div> <p align=center ><button id="xx" type="button" onClick="change()">click here to change key's color</button></p>
+const Projects=()=> window.location.href=("projects.html")
+const LinkedIn =() =>
+  window.location.href=("https://www.linkedin.com/in/mohd-saad-saifi-85938b304")
+const Resume=()=>
+  window.location.href="https://drive.google.com/file/d/1pAO66CmNimtyLacUhpy87JvSbi0QHoCB/view?usp=drivesdk";
 
-<div class="name">
-<i><h2 align=end style="font-size:15px">created:by Mohd Saad💐</h2>
-</i></div>
-</div>
-    
-</div>
-
-<script type="text/JavaScript"> 
-var i=1;
-function change(){
-  i+=1;
-  if(i%2==0){
-  document.body.style.backgroundColor="#243447";
-  document.getElementById("xx").innerHTML="Dark";
- document.getElementById("xx").style.color="white";
- document.getElementById("xx").style.backgroundColor="#243447";
- 
-let collect= document.getElementsByClassName("xxx"); 
- for(let i=0; i<collect.length;i++) {
-   collect[i].style.backgroundColor="#243447"
- } 
-    for(let i=0; i<collect.length;i++) {  collect[i].style.color="white";
- } 
-  document.getElementById("xxx").style.color="white";
- 
- }else
- if(i%2==1){
- document.body.style.backgroundColor="white";
- document.getElementById("xx").innerHTML="Light";
- document.getElementById("xx").style.color="#243447";
- document.getElementById("xx").style.backgroundColor="white";
-
-   let collect= document.getElementsByClassName("xxx"); 
-   for(let i=0; i<collect.length;i++) {  collect[i].style.backgroundColor="white";
- }
-   for(let i=0; i<collect.length;i++) {  collect[i].style.color="black";
- } 
-   document.getElementById("xxx").style.color="black";
- 
- } 
- }
+function profile(){
+document.getElementById("image").style.display="block";
+  }
+  function hide(){
+document.getElementById("image").style.display="none";
+}
 </script>
 </body>
-
 </html>
